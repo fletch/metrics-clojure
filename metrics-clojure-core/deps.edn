@@ -24,9 +24,9 @@
  :mvn/repos
  {"sonatype"
   {:url "http://oss.sonatype.org/content/repositories/releases",
-   :snapshots false,
+   :snapshots {:enabled false},
    :releases {:checksum :fail, :update :always}},
   "sonatype-snapshots"
   {:url "http://oss.sonatype.org/content/repositories/snapshots",
-   :snapshots true,
+   :snapshots {:enabled true},
    :releases {:checksum :fail, :update :always}}}}
